@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>秘龍亭</title>
+    <meta content="飛龍邸" name="description">
+    <link rel="icon" href="./favicon/apple-touch-icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="./favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="./favicon/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" href="./favicon/favicon.ico" type="image/vnd.microsoft.icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/9dbe5551f0.js"></script>
+    <script type="text/javascript" src="./js/progressbar.min.js"></script>
+</head>
+
+<body>
+    <!-- ローディング -->
+
+    <div id="splash">
+        <div id="splash_text"></div>
+        <div class="loader_cover loader_cover-up"></div>
+        <div class="loader_cover loader_cover-down"></div>
+    </div>
+
+    <!-- 予約ボタン -->
+    <div class=reserve-button-box>
+        <a href="###" class="reserve-text reserve-catch">ご予約へ</a>
+    </div>
+    <!-- ヘッダー -->
+    <header class=header>
+        <div class=header-container>
+            <div id="nav-wrapper" class="nav-wrapper">
+                <div class="hamburger" id="js-hamburger">
+                    <span class="hamburger__line hamburger__line--1"></span>
+                    <span class="hamburger__line hamburger__line--2"></span>
+                    <span class="hamburger__line hamburger__line--3"></span>
+                </div>
+                <nav class="sp-nav">
+                    <ul class="sp-nav-area">
+                        <li><a class="nav-link catch nav-anim" href="room.html">お部屋</li></a>
+                        <li><a class="nav-link catch nav-anim" href="food.html">お食事</li></a>
+                        <li><a class="nav-link catch nav-anim" href="bathroom.html">お風呂</li></a>
+                        <li><a class="nav-link catch nav-anim" href="building.html">施設案内</li></a>
+                        <li><a class="nav-link catch nav-anim" href="access.html">アクセス</li></a>
+                        <li><a class="nav-link catch nav-anim" href="contactform.html">お問合せ</li></a>
+                    </ul>
+                    <div c="" class="c-dl-menu__btnarea">
+                        <p class="c-dl-menu__btn c-btn c-btn__m nav-anim"><a href="" target="_blank" data-target="dl11" class="c-dl-menu-btn__plan c-dl-menu__link" onclick="gtag('event', 'click', { 'event_category': 'reserve','event_label': 'dl_plan','value': 1});">宿泊プラン<span class="dli-chevron-round-right"></span></a></p>
+                        <p class="c-dl-menu__btn c-btn c-btn__m nav-anim"><a href="" data-target="dl12" class="c-dl-menu-btn__plan c-dl-menu__link" onclick="gtag('event', 'click', { 'event_category': 'reserve','event_label': 'dl_search','value': 1});">日時から空室検索<span class="dli-chevron-round-right"></span></a></p>
+                        <div class=nav-menu-info-box>
+                            <p class="c-dl-menu__add nav-menu-info">〒000-0000<br>
+                                愛知県○◯市○○○○123-15</p>
+                            <p class="c-dl-menu__num nav-menu-info">TEL:<span>0570-00-0000</span></p>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="black-bg" id="js-black-bg"></div>
+            </div>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- トップカバー -->
+        <section class="access-cover anim-box-fadeup">
+            <div class=access-top-cover>
+                <a href="index.html" class="access-cover-logo">
+                    <img class="access-cover-logo-img" src="./images/logo1.png" alt="秘境の宿 飛龍邸">
+                </a>
+            </div>
+            <div class="access-cover-text-box">
+                <h1 class="access-cover-text line">アクセス</h1>
+            </div>
+        </section>
+        <!-- 宿泊について -->
+        <main>
+            <div class="access-map-container anim-box-fadeup">
+                <iframe class=access-map src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13045.707090891428!2d136.875209583341!3d35.170914219344155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x600376e794d78b89%3A0x81f7204bf8261663!2z5ZCN5Y-k5bGL6aeF!5e0!3m2!1sja!2sjp!4v1669800616313!5m2!1sja!2sjp" width="1440" height="700" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="access-text  scroll-block fade-block1">
+                <h2 class=access-main-text>
+                    <p class=access-sub-text-1>秘境の宿</p>
+                    <p class=access-sub-text-2>飛龍邸</p>
+                </h2>
+                <div class=access-address-container>
+                    <p class="access-address">〒000-0000<br>
+                        愛知県○◯市○○○○123-15</p>
+                    <p class="access-number">TEL:
+                        <span>0570-00-0000</span>
+                    </p>
+                </div>
+            </div>
+        </main>
+        <!-- トップページボタン -->
+        <a href="#">
+            <div class="ScrollTop">
+                <div class=arrow-box>
+                    <div class="arrow-top"></div>
+                    <div class="arrow-top"></div>
+                </div>
+                <div>
+                    <p>Page Top</p>
+                </div>
+            </div>
+        </a>
+        <!-- フッター -->
+        <footer class=footer>
+            <div class="scroll-block fade-block1">
+                <div class=footer-container>
+                    <div class="footer-logo">
+                        <a href="index.html">
+                            <img class="footer-logo-img" src="./images/logo1.png" alt="秘境の宿 飛龍邸">
+                        </a>
+                    </div>
+                    <div class=footer-box>
+                        <div class=footer-address-container>
+                            <p class="footer-address">〒000-0000<br>
+                                愛知県○◯市○○○○123-15</p>
+                            <p class="footer-number">TEL:<br />
+                                <span>0570-00-0000</span>
+                            </p>
+                        </div>
+                        <div class=footer-nav-area>
+                            <ul class="footer-nav-box nav-box-1">
+                                <li class=nav-anim><a class="footer-nav-link" href="room.html"><i class="fas fa-arrow-circle-right"></i>お部屋</li></a>
+                                <li class=nav-anim><a class="footer-nav-link" href="food.html"><i class="fas fa-arrow-circle-right"></i>お食事</li></a>
+                            </ul>
+                            <ul class="footer-nav-box">
+                                <li class=nav-anim><a class="footer-nav-link" href="bathroom.html"><i class="fas fa-arrow-circle-right"></i>お風呂</li></a>
+                                <li class=nav-anim><a class="footer-nav-link" href="building.html"><i class="fas fa-arrow-circle-right"></i>施設案内</li></a>
+                            </ul>
+                            <ul class="footer-nav-box">
+                                <li class=nav-anim><a class="footer-nav-link" href="access.html"><i class="fas fa-arrow-circle-right"></i>アクセス</li></a>
+                                <li class=nav-anim><a class="footer-nav-link" href="contactform.html"><i class="fas fa-arrow-circle-right"></i>お問合せ</li></a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class=sns-links-box>
+                    <ul class=sns-list-box>
+                        <li class=nav-anim><a class="sns-links" href="#"><i class="fab fa-instagram-square"></i></a>
+                        <li class=nav-anim><a class="sns-links" href="#"><i class="fab fa-twitter-square"></i></a>
+                        <li class=nav-anim><a class="sns-links" href="#"><i class="fab fa-facebook-square"></i></a>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <small>©2022 hiryutei.</small>
+                </div>
+            </div>
+        </footer>
+        <script src="./js/hamburger.js"></script>
+        <script src="./js/textanim.js"></script>
+        <script src="./js/scrolltop.js"></script>
+        <script src="./js/loading.js"></script>
+        <script src="./js/reload-top.js"></script>
+
+</body>
+
+</html>

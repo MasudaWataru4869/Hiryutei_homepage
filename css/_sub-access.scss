@@ -1,0 +1,131 @@
+/* 下層ページ アクセス */
+
+.access-cover {
+  position: relative;
+  height: 60vh;
+  margin: 0;
+}
+
+
+.access-top-cover {
+  display: flex;
+  width: 90%;
+  margin: auto;
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+.access-cover-logo {
+  z-index: 100;
+  margin: 0;
+  margin-top: 10vh;
+  font-size: 0;
+
+  @media (max-width: 480px) {
+    margin-top: 3rem;
+  }
+}
+
+.access-cover-logo-img {
+  height: 15rem;
+  margin-left: 20%;
+
+  @media (max-width: 480px) {
+    height: 10rem;
+    margin-left: 30%;
+  }
+}
+
+.access-cover-text-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  letter-spacing: .5em;
+
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+}
+
+.access-cover-text {
+  margin: auto;
+  font-size: 3rem;
+  font-family: "aoyagi-font", serif;
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+}
+
+.access-map-container {
+  width: 80%;
+  margin: auto;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.access-map {
+  width: 100%;
+  height: 80vh;
+
+  @media (max-width: 480px) {
+    height: 50vh;
+  }
+}
+
+.access-text {
+  width: 80%;
+  margin: 10rem auto;
+  text-align: center;
+}
+
+.access-main-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: normal;
+  font-size: 2.5rem;
+  letter-spacing: .5em;
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+}
+
+.access-sub-text-1 {
+  margin-right: 3rem;
+}
+
+.access-sub-text-2 {
+  font-size: 4rem;
+
+  @media (max-width: 480px) {
+    font-size: 3rem;
+  }
+}
+
+.access-address-container {
+  margin: 3rem auto;
+  font-size: 1.8rem;
+
+  @media (max-width: 480px) {
+    font-size: 1.5rem;
+  }
+}
+
+.access-number {
+  margin-top: 1rem;
+  font-size: 4rem;
+
+  @media (max-width: 480px) {
+    margin-top: 2rem;
+    font-size: 3rem;
+  }
+}

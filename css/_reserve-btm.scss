@@ -1,0 +1,72 @@
+.reserve-button-box {
+  position: fixed;
+  top: calc(50% - 8.2rem);
+  right: 2%;
+  z-index: 999;
+  font-family: "aoyagi-font", serif;
+
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-lr;
+
+
+  @media (max-width: 480px) {
+    top: auto;
+    right: auto;
+    bottom: 1%;
+    width: 100%;
+
+    writing-mode: unset;
+  }
+}
+
+.reserve-text {
+  color: $white;
+  font-size: 3rem;
+
+  @media (max-width: 480px) {
+    font-size: 2.5rem;
+  }
+}
+
+/* ご予約への横棒 */
+
+.reserve-catch {
+  display: flex;
+  /* 垂直中心 */
+  justify-content: center;
+  align-items: center;
+  /* 水平中心 */
+}
+
+.reserve-catch:before, .reserve-catch:after {
+  width: 1em;
+  border-top: 1px solid;
+  content: "";
+
+  /* 線の長さ */
+  @media (max-width: 480px) {
+    width: 0;
+    height: 1em;
+    border-top: none;
+    border-left: 1px solid;
+    content: "";
+  }
+}
+
+.reserve-catch:before {
+  margin-bottom: .7em;
+
+  @media (max-width: 480px) {
+    margin-right: .7em;
+    margin-bottom: 0;
+  }
+}
+
+.reserve-catch:after {
+  margin-top: .7em;
+
+  @media (max-width: 480px) {
+    margin-top: 0;
+    margin-left: .7em;
+  }
+}

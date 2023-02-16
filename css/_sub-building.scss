@@ -1,0 +1,149 @@
+/* 下層ページ お部屋 */
+
+.building-cover {
+  position: relative;
+  height: 50vh;
+  margin: 0;
+}
+
+
+.building-top-cover {
+  display: flex;
+  width: 90%;
+  margin: auto;
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+.building-cover-logo {
+  z-index: 100;
+  margin: 0;
+  margin-top: 10vh;
+  font-size: 0;
+
+  @media (max-width: 480px) {
+    margin-top: 3rem;
+  }
+}
+
+.building-cover-logo-img {
+  height: 15rem;
+  margin-left: 20%;
+
+  @media (max-width: 480px) {
+    height: 10rem;
+    margin-left: 30%;
+  }
+}
+
+.building-cover-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  font-size: 3rem;
+  font-family: "aoyagi-font", serif;
+  letter-spacing: .5em;
+
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+}
+
+.building-cover-sub-text {
+  text-indent: 2em;
+}
+.building-type {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: auto;
+}
+
+.building-img-container {
+  margin: auto;
+}
+
+.building-loging-top {
+  margin-bottom: 6rem;
+  font-size: 3rem;
+  letter-spacing: .3em;
+  text-align: center;
+}
+
+.building-loging-container {
+  width: 70%;
+  margin: auto;
+  font-size: 1.5rem;
+  letter-spacing: .4em;
+
+  @media (max-width: 480px) {
+    width: 80%;
+  }
+}
+
+.building-loging-maintext {
+  width: 25%;
+  border-bottom: 1px solid $white;
+  line-height: 1.4;
+
+  @media (max-width: 480px) {
+    display: block;
+    width: 80%;
+    padding: 20px 20px 10px;
+    border: none;
+    text-align: start;
+  }
+}
+
+/* 見出しの横棒 */
+
+.building-loging-catch {
+  @media (max-width: 480px) {
+    display: flex;
+    align-items: center;
+    /* 垂直中心 */
+  }
+}
+
+.building-loging-catch:before, .building-loging-catch:after {
+  @media (max-width: 480px) {
+    width: .8em;
+    border-top: 1px solid;
+    content: "";
+    /* 線の長さ */
+  }
+}
+
+.building-loging-catch:before {
+  @media (max-width: 480px) {
+    margin-right: .5em;
+    /* 文字の右隣 */
+  }
+}
+.building-loging-catch:after {
+  @media (max-width: 480px) {
+    margin-right: .5em;
+    /* 文字の右隣 */
+  }
+}
+
+.building-loging-subtext {
+  padding: 40px 40px 40px 50px;
+  border-bottom: 1px solid #e1dede;
+  line-height: 1.4;
+
+  @media (max-width: 480px) {
+    display: block;
+    max-width: inherit;
+    padding: 2rem 1rem;
+  }
+}

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <title>秘龍亭</title>
+    <meta content="飛龍邸" name="description">
+    <link rel="icon" href="./favicon/apple-touch-icon.png" type="image/png">
+    <link rel="apple-touch-icon" href="./favicon/apple-touch-icon.png">
+    <link rel="shortcut icon" href="./favicon/favicon.ico" sizes="any">
+    <link rel="icon" href="./favicon/favicon.ico" type="image/vnd.microsoft.icon">
+    <link rel="apple-touch-icon" href="./favicon/favicon.ico" type="image/vnd.microsoft.icon">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" rel="stylesheet" type="text/css">
+    <link href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" rel="stylesheet" type="text/css">
+    <link href="./css/style.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/9dbe5551f0.js"></script>
+    <script type="text/javascript" src="./js/progressbar.min.js"></script>
+</head>
+
+<body>
+    <!-- ローディング -->
+
+    <div id="splash">
+        <div id="splash_text"></div>
+        <div class="loader_cover loader_cover-up"></div>
+        <div class="loader_cover loader_cover-down"></div>
+    </div>
+
+    <!-- 予約ボタン -->
+    <div class=reserve-button-box>
+        <a href="###" class="reserve-text reserve-catch">ご予約へ</a>
+    </div>
+    <!-- ヘッダー -->
+    <header class=header>
+        <div class=header-container>
+            <div id="nav-wrapper" class="nav-wrapper">
+                <div class="hamburger" id="js-hamburger">
+                    <span class="hamburger__line hamburger__line--1"></span>
+                    <span class="hamburger__line hamburger__line--2"></span>
+                    <span class="hamburger__line hamburger__line--3"></span>
+                </div>
+                <nav class="sp-nav">
+                    <ul class="sp-nav-area">
+                        <li><a class="nav-link catch nav-anim" href="room.html">お部屋</li></a>
+                        <li><a class="nav-link catch nav-anim" href="food.html">お食事</li></a>
+                        <li><a class="nav-link catch nav-anim" href="bathroom.html">お風呂</li></a>
+                        <li><a class="nav-link catch nav-anim" href="building.html">施設案内</li></a>
+                        <li><a class="nav-link catch nav-anim" href="access.html">アクセス</li></a>
+                        <li><a class="nav-link catch nav-anim" href="contactform.html">お問合せ</li></a>
+                    </ul>
+                    <div c="" class="c-dl-menu__btnarea">
+                        <p class="c-dl-menu__btn c-btn c-btn__m nav-anim"><a href="" target="_blank" data-target="dl11" class="c-dl-menu-btn__plan c-dl-menu__link" onclick="gtag('event', 'click', { 'event_category': 'reserve','event_label': 'dl_plan','value': 1});">宿泊プラン<span class="dli-chevron-round-right"></span></a></p>
+                        <p class="c-dl-menu__btn c-btn c-btn__m nav-anim"><a href="" data-target="dl12" class="c-dl-menu-btn__plan c-dl-menu__link" onclick="gtag('event', 'click', { 'event_category': 'reserve','event_label': 'dl_search','value': 1});">日時から空室検索<span class="dli-chevron-round-right"></span></a></p>
+                        <div class=nav-menu-info-box>
+                            <p class="c-dl-menu__add nav-menu-info">〒000-0000<br>
+                                愛知県○◯市○○○○123-15</p>
+                            <p class="c-dl-menu__num nav-menu-info">TEL:<span>0570-00-0000</span></p>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="black-bg" id="js-black-bg"></div>
+            </div>
+        </div>
+    </header>
+    <!-- メイン -->
+    <main>
+        <!-- トップカバー -->
+        <section class="room-cover anim-box-fadeup">
+            <div class="room-background-gradation ">
+                <div class=room-top-cover>
+                    <a href="index.html" class="room-cover-logo">
+                        <img class="room-cover-logo-img" src="./images/logo1.png" alt="秘境の宿 飛龍邸">
+                    </a>
+                </div>
+                <div class="room-cover-text">
+                    <h2 class=line>お部屋</h2>
+                </div>
+                <div class=cover-scroll-box>
+                    <div class=cover-scroll-container>
+                        <div class="scroll">
+                            <span class="txt">Scroll</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- お部屋 -->
+        <section class="room-consept scroll-block fade-block1">
+            <div class=room-consept-container>
+                <p class=room-main-text>大自然を眺め、ひとときを過ごせる</p>
+                <p class=room-main-text>全12室の部屋はそれぞれ露天風呂付のタイプになります。</p>
+                <p class=room-main-text>自然を感じ、大きく深呼吸しておくつろぎ下さい。</p>
+            </div>
+            <div class=room-type>
+                <div class=room-img-container>
+                    <figure class=hover-parent>
+                        <img src="./images/room4.jpg">
+                        <figcaption class=hover-mask>
+                            部屋「青龍」
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class=room-img-container>
+                    <figure class=hover-parent>
+                        <img src="./images/room6.jpg">
+                        <figcaption class=hover-mask>
+                            部屋「赤龍」
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+            <div class=room-type>
+                <div class=room-img-container>
+                    <figure class=hover-parent>
+                        <img src="./images/room6.jpg">
+                        <figcaption class=hover-mask>
+                            部屋「白龍」
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class=room-img-container>
+                    <figure class=hover-parent>
+                        <img src="./images/room4.jpg">
+                        <figcaption class=hover-mask>
+                            部屋「黒龍」
+                        </figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <!-- 宿泊について -->
+        <section class="scroll-block fade-block1">
+            <h2 class=loging-top>宿泊について</h2>
+            <table class=loging-container>
+                <tbody>
+                    <tr class=loging-box>
+                        <th class="loging-maintext loging-catch">総客室数</th>
+                        <td class=loging-subtext>12室</td>
+                    </tr>
+                    <tr class=loging-box>
+                        <th class="loging-maintext loging-catch">共通のアメニティ</th>
+                        <td class=loging-subtext>歯ブラシ、ひげそり、ハンドタオル、バスタオル、ドライヤー</td>
+                    </tr>
+                    <tr class=loging-box>
+                        <th class="loging-maintext loging-catch">施設設備のご案内</th>
+                        <td class=loging-subtext>大広間（40人）<br>
+                            大露天風呂（松の湯、椿の湯）<br>
+                            専用露天風呂付離れ客室（12室）<br>
+                            ロビー<br>
+                            お土産コーナー<br>
+                    </tr>
+                    <tr class=loging-box>
+                        <th class="loging-maintext loging-catch">お食事場所のご案内</th>
+                        <td class=loging-subtext>夕食場所: お食事処<br>
+                            朝食場所: お食事処</td>
+                    </tr>
+                    <tr class=loging-box>
+                        <th class="loging-maintext loging-catch">チェックイン/チェックアウト</th>
+                        <td class=loging-subtext>15:00 / 11:00</td>
+                    </tr>
+                    <tr class=loging-box>
+                        <th class="loging-maintext loging-catch">キャンセルポリシー</th>
+                        <td class=loging-subtext>当日のキャンセル：100%<br>
+                            前日のキャンセル：70% <br>
+                            前々日のキャンセル：50%<br>
+                            3日～7日前のキャンセル：20%</td>
+                    </tr>
+                    <tr class=loging-box>
+                        <th class="loging-maintext loging-catch">送迎のご案内</th>
+                        <td class=loging-subtext>飛龍邸まで送迎を行っております。<br>
+                            お電話にてご相談ください。<br>
+                            TEL : <a href="tel:0967440059">0570-00-0000</a></td>
+                    </tr>
+                    <tr class=loging-box>
+                        <th class="loging-maintext loging-catch">クレジットカード・電子マネーご利用の可否</th>
+                        <td class=loging-subtext>クレジットカード・電子マネーでのお支払可</td>
+                    </tr>
+                    <tr class=loging-box>
+                        <th class="loging-maintext loging-catch">休業日</th>
+                        <td class=loging-subtext>なし（年中無休）</td>
+                    </tr>
+                    <tr class=loging-box>
+                        <th class="loging-maintext loging-catch">駐車場</th>
+                        <td class=loging-subtext>無料／収容台数：乗用車20台</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        </section>
+    </main>
+    <!-- トップページボタン -->
+    <a href="#">
+        <div class="ScrollTop">
+            <div class=arrow-box>
+                <div class="arrow-top"></div>
+                <div class="arrow-top"></div>
+            </div>
+            <div>
+                <p>Page Top</p>
+            </div>
+        </div>
+    </a>
+    <!-- フッター -->
+    <footer class=footer>
+        <div class="scroll-block fade-block1">
+            <div class=footer-container>
+                <div class="footer-logo">
+                    <a href="index.html">
+                        <img class="footer-logo-img" src="./images/logo1.png" alt="秘境の宿 飛龍邸">
+                    </a>
+                </div>
+                <div class=footer-box>
+                    <div class=footer-address-container>
+                        <p class="footer-address">〒000-0000<br>
+                            愛知県○◯市○○○○123-15</p>
+                        <p class="footer-number">TEL:<br />
+                            <span>0570-00-0000</span>
+                        </p>
+                    </div>
+                    <div class=footer-nav-area>
+                        <ul class="footer-nav-box nav-box-1">
+                            <li class=nav-anim><a class="footer-nav-link" href="room.html"><i class="fas fa-arrow-circle-right"></i>お部屋</li></a>
+                            <li class=nav-anim><a class="footer-nav-link" href="food.html"><i class="fas fa-arrow-circle-right"></i>お食事</li></a>
+                        </ul>
+                        <ul class="footer-nav-box">
+                            <li class=nav-anim><a class="footer-nav-link" href="bathroom.html"><i class="fas fa-arrow-circle-right"></i>お風呂</li></a>
+                            <li class=nav-anim><a class="footer-nav-link" href="building.html"><i class="fas fa-arrow-circle-right"></i>施設案内</li></a>
+                        </ul>
+                        <ul class="footer-nav-box">
+                            <li class=nav-anim><a class="footer-nav-link" href="access.html"><i class="fas fa-arrow-circle-right"></i>アクセス</li></a>
+                            <li class=nav-anim><a class="footer-nav-link" href="###"><i class="fas fa-arrow-circle-right"></i>お問合せ</li></a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class=sns-links-box>
+                <ul class=sns-list-box>
+                    <li class=nav-anim><a class="sns-links" href="#"><i class="fab fa-instagram-square"></i></a>
+                    <li class=nav-anim><a class="sns-links" href="#"><i class="fab fa-twitter-square"></i></a>
+                    <li class=nav-anim><a class="sns-links" href="#"><i class="fab fa-facebook-square"></i></a>
+                </ul>
+            </div>
+            <div class="copyright">
+                <small>©2022 hiryutei.</small>
+            </div>
+        </div>
+    </footer>
+    <script src="./js/hamburger.js"></script>
+    <script src="./js/textanim.js"></script>
+    <script src="./js/scrolltop.js"></script>
+    <script src="./js/loading.js"></script>
+    <script src="./js/reload-top.js"></script>
+
+</body>
+
+</html>

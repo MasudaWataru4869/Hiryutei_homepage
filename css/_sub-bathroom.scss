@@ -1,0 +1,212 @@
+/* 下層ページ お風呂 */
+
+.bathroom-cover {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  background-image: url(../images/bathroom4.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bathroom-background-gradation {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, .5), transparent 50%), linear-gradient(to left, rgba(0, 0, 0, .4), transparent 30%);
+
+  @media (max-width: 480px) {
+    background: linear-gradient(to right, rgba(0, 0, 0, .6), transparent 60%);
+  }
+}
+
+.bathroom-top-cover {
+  display: flex;
+  width: 90%;
+  margin: auto;
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+.bathroom-cover-logo {
+  z-index: 100;
+  margin: 0;
+  margin-top: 10vh;
+  font-size: 0;
+
+  @media (max-width: 480px) {
+    margin-top: 3rem;
+  }
+}
+
+.bathroom-cover-logo-img {
+  height: 15rem;
+  margin-left: 20%;
+
+  @media (max-width: 480px) {
+    height: 10rem;
+    margin-left: 30%;
+  }
+}
+
+.bathroom-cover-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 8rem;
+  width: 30%;
+  font-size: 4rem;
+  font-family: "aoyagi-font", serif;
+  letter-spacing: .5em;
+
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+
+  @media (max-width: 480px) {
+    justify-content: flex-end;
+    align-items: flex-start;
+    bottom: 15rem;
+    width: 85%;
+    height: 45%;
+    font-size: 3rem;
+  }
+}
+
+.bathroom-cover-sub-text {
+  text-indent: 2em;
+}
+
+.bathroom-consept-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 20rem auto;
+  font-size: 2rem;
+  line-height: 3;
+  letter-spacing: .2em;
+
+  @media (max-width: 480px) {
+    margin: 10rem auto;
+    font-size: 1.5rem;
+    line-height: 2.5;
+    text-align: center;
+  }
+}
+
+/* カルーセル */
+
+
+.bathroom-imgbox {
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+}
+
+/*=============
+slick
+=============*/
+
+.carousel {
+  div {
+    opacity: .8;
+    height: 90vh;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 480px) {
+      height: 30vh;
+    }
+  }
+}
+
+.carousel div.img10 {
+  background-image: url(../images/bathroom1.jpg);
+}
+
+.carousel div.img11 {
+  background-image: url(../images/bathroom2.jpg);
+}
+
+.carousel div.img12 {
+  background-image: url(../images/bathroom3.jpg);
+}
+
+.carousel div.img13 {
+  background-image: url(../images/bathroom5.jpg);
+}
+
+.carousel div.img14 {
+  background-image: url(../images/bathroom6.jpg);
+}
+
+.carousel div.img15 {
+  background-image: url(../images/bathroom7.jpg);
+}
+
+.carousel .slick-dots {
+  bottom: 4%;
+  z-index: +1;
+  font-size: 10px;
+}
+
+.slick-dots li button:before {
+  opacity: .5;
+  color: $white;
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .8;
+  color: $black;
+}
+
+.bathroom-text-box {
+  margin: 20rem 0;
+  line-height: 3;
+  letter-spacing: .2em;
+  text-align: center;
+
+  @media (max-width: 480px) {
+    margin: 10rem auto;
+  }
+}
+
+.bathroom-consept-text {
+  font-size: 3rem;
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+    line-height: 2;
+  }
+}
+
+.bathroom-sub-text {
+  width: 60%;
+  margin: auto;
+  font-size: 1.8rem;
+
+  @media (max-width: 480px) {
+    width: 80%;
+    margin: 1.5rem auto;
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing: 0;
+    text-align: center;
+  }
+}
+
+.sp-line {
+  display: none;
+
+  @media (max-width: 480px) {
+    display: block;
+  }
+}

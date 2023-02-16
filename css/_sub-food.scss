@@ -1,0 +1,291 @@
+/* 下層ページ お食事 */
+
+.food-cover {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+  background-image: url(../images/food3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.food-background-gradation {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(to right, rgba(0, 0, 0, .5), transparent 50%), linear-gradient(to left, rgba(0, 0, 0, .4), transparent 30%);
+
+  @media (max-width: 480px) {
+    background: linear-gradient(to right, rgba(0, 0, 0, .6), transparent 60%);
+  }
+}
+
+.food-top-cover {
+  display: flex;
+  width: 90%;
+  margin: auto;
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+.food-cover-logo {
+  z-index: 100;
+  margin: 0;
+  margin-top: 10vh;
+  font-size: 0;
+
+  @media (max-width: 480px) {
+    margin-top: 3rem;
+  }
+}
+
+.food-cover-logo-img {
+  height: 15rem;
+  margin-left: 20%;
+
+  @media (max-width: 480px) {
+    height: 10rem;
+    margin-left: 30%;
+  }
+}
+
+.food-cover-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 8rem;
+  width: 30%;
+  font-size: 4rem;
+  font-family: "aoyagi-font", serif;
+  letter-spacing: .5em;
+
+  -ms-writing-mode: tb-rl;
+      writing-mode: vertical-rl;
+
+  @media (max-width: 480px) {
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 45%;
+    font-size: 3rem;
+  }
+}
+
+.food-cover-sub-text {
+  text-indent: 2em;
+}
+
+.food-consept-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: 20rem auto;
+  font-size: 2rem;
+  line-height: 3;
+  letter-spacing: .2em;
+
+  @media (max-width: 480px) {
+    margin: 10rem auto;
+    font-size: 1.5rem;
+    line-height: 2.5;
+    text-align: center;
+  }
+}
+
+/* カルーセル */
+
+
+.food-imgbox {
+  position: relative;
+}
+
+.carousel {
+  position: relative;
+}
+
+/*=============
+slick
+=============*/
+
+.carousel {
+  div {
+    opacity: .8;
+    height: 90vh;
+    margin: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    @media (max-width: 480px) {
+      height: 30vh;
+    }
+  }
+}
+
+.carousel div.img01 {
+  background-image: url(../images/food19.jpg);
+}
+
+.carousel div.img02 {
+  background-image: url(../images/food15.jpg);
+}
+
+.carousel div.img03 {
+  background-image: url(../images/food16.jpg);
+}
+
+.carousel div.img04 {
+  background-image: url(../images/food17.jpg);
+}
+
+.carousel div.img05 {
+  background-image: url(../images/food18.jpg);
+}
+
+.carousel div.img06 {
+  background-image: url(../images/food10.jpg);
+}
+
+.carousel div.img07 {
+  background-image: url(../images/food11.jpg);
+}
+
+.carousel div.img08 {
+  background-image: url(../images/food12.jpg);
+}
+
+.carousel div.img09 {
+  background-image: url(../images/food13.jpg);
+}
+
+.carousel .slick-dots {
+  bottom: 4%;
+  z-index: +1;
+  font-size: 10px;
+}
+
+.slick-dots li button:before {
+  opacity: .5;
+  color: $white;
+  font-size: 10px;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: .8;
+  color: $black;
+}
+
+.food-text-box {
+  margin: 20rem 0;
+  line-height: 3;
+  letter-spacing: .2em;
+  text-align: center;
+
+  @media (max-width: 480px) {
+    margin: 10rem auto;
+  }
+}
+
+.food-consept-text {
+  font-size: 3rem;
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
+}
+
+.food-sub-text {
+  font-size: 1.8rem;
+
+  @media (max-width: 480px) {
+    width: 80%;
+    margin: 1.5rem auto;
+    font-size: 1.5rem;
+    line-height: 2;
+    letter-spacing: 0;
+  }
+}
+
+.food-am-menu-container {
+  display: flex;
+  width: 80%;
+  margin: 10rem auto;
+  letter-spacing: .2em;
+}
+
+.am-menu-maintext {
+  width: 20%;
+  font-size: 2rem;
+
+  @media (max-width: 480px) {
+    writing-mode: tb;
+  }
+}
+
+.am-menu-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 30rem;
+  margin-left: 7rem;
+  font-size: 1.8rem;
+
+  @media (max-width: 480px) {
+    height: auto;
+    font-size: 1.3rem;
+  }
+}
+
+.am-menu-list li {
+  width: 100%;
+  height: 4rem;
+
+  @media (max-width: 480px) {
+    height: auto;
+    margin: .5rem 0;
+  }
+}
+
+.food-pm-menu-container {
+  display: flex;
+  width: 80%;
+  margin: 10rem auto;
+  letter-spacing: .2em;
+}
+
+.pm-menu-maintext {
+  width: 20%;
+  font-size: 2rem;
+
+  @media (max-width: 480px) {
+    writing-mode: tb;
+  }
+}
+
+.pm-menu-list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  max-width: 30rem;
+  height: 30rem;
+  margin-left: 7rem;
+  font-size: 1.8rem;
+
+  @media (max-width: 480px) {
+    max-width: 16rem;
+    height: auto;
+    font-size: 1.3rem;
+  }
+}
+
+.pm-menu-list li {
+  width: 100%;
+  height: auto;
+
+  @media (max-width: 480px) {
+    margin: .5rem 0;
+  }
+}

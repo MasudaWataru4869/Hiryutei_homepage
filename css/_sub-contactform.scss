@@ -1,0 +1,149 @@
+/* ----下層ページ お問い合せフォーム---- */
+
+.contact-cover {
+  position: relative;
+  height: 100vh;
+  margin: 0;
+}
+
+
+.contact-top-cover {
+  display: flex;
+  width: 90%;
+  margin: auto;
+
+  @media (max-width: 480px) {
+    width: 90%;
+  }
+}
+
+.contact-cover-logo {
+  z-index: 100;
+  margin: 0;
+  margin-top: 10vh;
+  font-size: 0;
+
+  @media (max-width: 480px) {
+    margin-top: 3rem;
+  }
+}
+
+.contact-cover-logo-img {
+  height: 15rem;
+  margin-left: 20%;
+
+  @media (max-width: 480px) {
+    height: 10rem;
+    margin-left: 30%;
+  }
+}
+
+.contact-background {
+  display: block;
+  height: auto;
+  background-image: url(../images/topcover1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgb(0 0 0 / .5);
+  animation: none;
+
+  background-blend-mode: darken;
+}
+
+.contact-background-box {
+  height: 150rem;
+  background: linear-gradient(to top, rgb(0 0 0 / 98%), transparent 30%);
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.contact-box {
+  display: flex;
+  padding: 3rem 2rem;
+
+  @media (max-width: 480px) {
+    display: block;
+    padding: 4rem 2rem;
+  }
+}
+
+.contact-main-text {
+  margin-bottom: 10rem;
+  color: $white;
+  font-size: 3rem;
+  font-family: "aoyagi-font", serif;
+  text-align: center;
+
+  @media (max-width: 480px) {
+    margin: 10rem auto;
+    font-size: 3rem;
+  }
+}
+
+.contact-submit {
+  display: block;
+  padding: 7px 70px;
+  border: none;
+          border-radius: 17px;
+  background: #0e79ea;
+  color: #ffffff;
+  text-align: center;
+  cursor: pointer;
+  /* Webkit */
+
+  -webkit-border-radius: 17px;
+  -webkit-box-shadow: 2px 3px 2px #000000;
+  /* Firefox */
+     -moz-border-radius: 17px;
+     -moz-box-shadow: 2px 3px 2px #000000;
+}
+
+.contact-label {
+  display: flex;
+  width: 20rem;
+  color: $white;
+
+  @media (max-width: 480px) {
+    margin-bottom: 2rem;
+  }
+}
+
+.contact-span {
+  margin-right: 1rem;
+  padding: .4rem;
+  border-radius: .3rem;
+  background: rgb(106 106 106);
+  color: $black;
+  font-size: 1.2rem;
+}
+
+.contact-text-area {
+  padding: .8rem;
+  border: 0rem;
+  border-radius: .6rem;
+  background: #f5f5f5;
+  color: $black;
+
+  -webkit-box-shadow: 2px 3px 2px #000000;
+     -moz-box-shadow: 2px 3px 2px #000000;
+
+  @media (max-width: 480px) {
+    width: 100%;
+  }
+}
+
+.contact-content {
+  text-indent: 3.5em;
+
+  @media (max-width: 480px) {
+    text-indent: 0;
+  }
+}
